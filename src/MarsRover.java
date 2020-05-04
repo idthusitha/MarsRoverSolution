@@ -6,9 +6,11 @@ public class MarsRover {
 	private String roverFacing = "N";
 
 	public void setPosition(int x, int y, String roverFacingTemp) {
-		this.x = x;
-		this.y = y;
-		this.roverFacing = roverFacingTemp;
+		synchronized (MarsRover.class) {
+			this.x = x;
+			this.y = y;
+			this.roverFacing = roverFacingTemp;
+		}
 	}
 
 	public void printRoverPosition() {
