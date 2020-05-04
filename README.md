@@ -14,6 +14,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 Assume that the square directly North from (x, y) is (x, y+1).
 
 ##INPUT:
+
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed
 to be 0,0.
 The rest of the input is information pertaining to the rovers that have been deployed. Each rover has two
@@ -25,14 +26,17 @@ Each rover will be finished sequentially, which means that the second rover wonâ
 first one has finished moving.
 
 ##OUTPUT
+
 The output for each rover should be its final co-ordinates and heading.
 INPUT AND OUTPUT
-Test Input:
+
+###Test Input:
 5 5
 1 2 N
 LMLMLMLMM
 3 3 E
 MMRMMRMRRM
-Expected Output:
+
+###Expected Output:
 1 3 N
 5 1 E
